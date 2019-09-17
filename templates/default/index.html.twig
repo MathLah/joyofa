@@ -1,39 +1,62 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <img src="{{ asset('images/accueil.jpg') }}" alt="Bannière"/>
-    <img src="{{ asset('images/photocv2017_250.jpg') }}" alt="photo - image"/>
+    <div class="row">
+        <div class="col-lg-12 text-right joyofa-header" id="index-header">
+            <div class="offset-lg-9 col-lg-3">
+                <img src="{{ asset('images/photocv2017_250.jpg') }}" alt="photo - image" class="img photocv"/>
+                <ul class="list-homepage">
+                    <li>Hypnothérapeute</li>
+                    <li>E.F.T.</li>
+                </ul>
 
-    <h2>Prendre le temps de se poser....</h2>
+                <p class="list-homepage">Bourg en Lavaux et environs</p>
+                <p class="list-homepage">Possibilité de déplacement</p>
+            </div>
+        </div>
+    </div>
 
-    <h2>Savoir ce que l'on veut....</h2>
+    <h2 class="text-right">Prendre le temps de se poser....</h2>
 
-    <h2>Aller vers le changement....</h2>
+    <h2 class="text-center">Savoir ce que l'on veut....</h2>
 
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#quoi-hypnose">
-        Qu'est-ce que l'hypnose ?
-    </button>
+    <h2 class="text-left">Aller vers le changement....</h2>
 
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#quoi-eft">
-        Qu'est-ce que l'E.F.T. ?
-    </button>
+    <p class="list-homepage">
+        <button type="button" class="btn btn-primary btn-homepage" data-toggle="modal" data-target="#quoi-hypnose">
+            Qu'est-ce que l'hypnose ?
+        </button>
+    </p>
 
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#qui-quoi">
-        Pour qui et pourquoi aller vers l'hypnose ?
-    </button>
+    <p class="list-homepage">
+        <button type="button" class="btn btn-primary btn-homepage" data-toggle="modal" data-target="#quoi-eft">
+            Qu'est-ce que l'E.F.T. ?
+        </button>
+    </p>
 
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#problemes">
-        Pour quels problèmes ?
-    </button>
+    <p class="list-homepage">
+        <button type="button" class="btn btn-primary btn-homepage" data-toggle="modal" data-target="#qui-quoi">
+            Pour qui et pourquoi aller vers l'hypnose ?
+        </button>
+    </p>
 
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#therapeute">
-        Quels critères pour choisir son thérapeute ?
-    </button>
+    <p class="list-homepage">
+        <button type="button" class="btn btn-primary btn-homepage" data-toggle="modal" data-target="#problemes">
+            Pour quels problèmes ?
+        </button>
+    </p>
+
+    <p class="list-homepage">
+        <button type="button" class="btn btn-primary btn-homepage" data-toggle="modal" data-target="#therapeute">
+            Quels critères pour choisir son thérapeute ?
+        </button>
+    </p>
 
     <div class="modal fade" id="quoi-hypnose" tabindex="-1" role="dialog" aria-labelledby="quoi-hypnoseLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
+                    <h5>Qu'est-ce que l'hypnose ?</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -47,9 +70,6 @@
 
                     Le sujet reste conscient de tous ses actes et ses paroles. Tous ses sens sont en éveil et rien ne peut être fait sans l'accord de celui-ci. Rien ne peut être fait à l'encontre de
                     ses valeurs et de sa sécurité.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                 </div>
             </div>
         </div>
@@ -70,9 +90,6 @@
                     sur des points précis autour de l'oeil, au dessus, en dessous des lèvres, de la clavicule, etc...
 
                     Tout ceci en même temps qu'une verbalisation bien précise.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                 </div>
             </div>
         </div>
@@ -104,9 +121,6 @@
                     Toutes ces décisions prises au nouvel an et qui sont impossible à tenir, ou ces douleurs épuisantes qui rongent le moral, cet état de mal-être, ces souvenirs, ...
 
                     Il est parfois nécessaire de se faire accompagner, de se faire aider pour apaiser le "ça" douloureux.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                 </div>
             </div>
         </div>
@@ -143,9 +157,6 @@
                     </ul>
                     Attention: L'hypnose ne remplace en rien les traitements médicamenteux, c'est une aide, un traitement complémentaire à ceux prescrit par votre médecin.
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                </div>
             </div>
         </div>
     </div>
@@ -171,9 +182,6 @@
                         <li>les domaines et spécialités du thérapeute.</li>
                     </ul>
                     Le patient doit se faire confiance pour choisir son thérapeute, celui qui va lui convenir.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                 </div>
             </div>
         </div>

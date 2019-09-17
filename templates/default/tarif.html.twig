@@ -1,14 +1,13 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    <div class="row">
+        <div class="col-lg-12 text-right joyofa-header" id="tarif-header">
+        </div>
+    </div>
 
-    <img src="{{ asset('images/tarif.jpg') }}" alt="le tarif - image"/>
-
-Le montant d'une séance est de 120 CHF, que ce soit pour 60 ou 90 minutes.
-
-Elle est de 140 CHF si je me déplace au domicile pour certaines situations.
-
-Avec certains justificatifs, le tarif de la séance peut être négocié.
-
-Chaque séance se règle à la fin de la rencontre, uniquement au comptant car je n'ai pas de dispositif pour les cartes bancaires.
+    <p>
+    Le montant d'une séance est de  120chf, que ce soit pour 60 ou 90 minutes.<br />
+    Chaque séance est à régler à la fin de la rencontre uniquement au comptant car je n'ai pas de dispositif pour les cartes bancaires.
+    </p>
 {% endblock %}

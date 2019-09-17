@@ -2,10 +2,22 @@
 
 
 {% block body %}
-    <img src="{{ asset('images/quisuisje.jpg') }}" alt="qui suis je - image"/>
-    <img src="{{ asset('images/photocv2017_250.jpg') }}" alt="qui suis je - image"/>
+    <div class="row">
+        <div class="col-lg-12 text-right joyofa-header" id="quisuisje-header">
+            <div class="offset-lg-9 col-lg-3">
+                <img src="{{ asset('images/photocv2017_250.jpg') }}" alt="photo - image" class="img photocv"/>
+                <ul class="list-homepage">
+                    <li>Hypnothérapeute</li>
+                    <li>E.F.T.</li>
+                </ul>
 
-Infirmière en santé mentale depuis de très longues années, j'ai fait la formation d'hypnothérapeute en Suisse et je continue de me former à Paris, Nantes, Annecy, ... Des formations sur la douleur, les traumas, le deuil, le poids, le stress, la dépression, les phobies et autres fragilités.
+                <p class="list-homepage">Bourg en Lavaux et environs</p>
+                <p class="list-homepage">Possibilité de déplacement</p>
+            </div>
+        </div>
+    </div>
 
-Je ne suis ni médecin, ni psychologue, je n'ai pas non plus de baguette magique mais il y a vous : vos ressources et la possibilités de les éveiller, de les mettre en oeuvre pour arriver à votre but.
+<p>Infirmière en santé mentale depuis de très longues années, j'ai fait la formation d'hypnothérapeute en Suisse et je continue de me former à Paris, Nantes, Annecy, ... Des formations sur la douleur, les traumas, le deuil, le poids, le stress, la dépression, les phobies et autres fragilités.</p>
+
+<p>Je ne suis ni médecin, ni psychologue, je n'ai pas non plus de baguette magique mais il y a vous : vos ressources et la possibilités de les éveiller, de les mettre en oeuvre pour arriver à votre but.</p>
 {% endblock %}

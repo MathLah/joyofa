@@ -1,0 +1,184 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <img src="{{ asset('images/accueil.jpg') }}" alt="Bannière"/>
+    <img src="{{ asset('images/photocv2017_250.jpg') }}" alt="photo - image"/>
+
+    <h2>Prendre le temps de se poser....</h2>
+
+    <h2>Savoir ce que l'on veut....</h2>
+
+    <h2>Aller vers le changement....</h2>
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#quoi-hypnose">
+        Qu'est-ce que l'hypnose ?
+    </button>
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#quoi-eft">
+        Qu'est-ce que l'E.F.T. ?
+    </button>
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#qui-quoi">
+        Pour qui et pourquoi aller vers l'hypnose ?
+    </button>
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#problemes">
+        Pour quels problèmes ?
+    </button>
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#therapeute">
+        Quels critères pour choisir son thérapeute ?
+    </button>
+
+    <div class="modal fade" id="quoi-hypnose" tabindex="-1" role="dialog" aria-labelledby="quoi-hypnoseLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="{{ asset('images/modal-questceque.jpg') }}" alt="modal-questceque"/>
+
+                    C'est une technique thérapeutique où le patient est dans un état de conscience modifiée comme lors des rêveries.
+
+                    Avec l'aide du thérapeute, il a accès à ses propres ressources, ses compétences et à tout son potentiel positif pour revisiter la réalité du présent et aller vers le changement.
+
+                    Le sujet reste conscient de tous ses actes et ses paroles. Tous ses sens sont en éveil et rien ne peut être fait sans l'accord de celui-ci. Rien ne peut être fait à l'encontre de
+                    ses valeurs et de sa sécurité.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="quoi-eft" tabindex="-1" role="dialog" aria-labelledby="quoi-hypnoseLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="{{ asset('images/modal-eft.jpg') }}" alt="modal-eft"/>
+
+                    C'est une technique de libération émotionnelle par la stimulation des points d'acupuncture situés sur le trajet des méridiens. Cette stimulation se fait par des petits tapotements
+                    sur des points précis autour de l'oeil, au dessus, en dessous des lèvres, de la clavicule, etc...
+
+                    Tout ceci en même temps qu'une verbalisation bien précise.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="qui-quoi" tabindex="-1" role="dialog" aria-labelledby="quoi-hypnoseLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="{{ asset('images/modal-quiquoi.jpg') }}" alt="Bannière"/>
+
+                    Pour qui ?
+
+                    Tout le monde peut bénéficier de ces thérapies ou presque, mais comme dans tout, il y a des exceptions. Les personnes borderlines ou souffrant de dépression grave, celle ayant des
+                    troubles psychotiques ou celles sous l'emprise de l'alcool, de drogues ne peuvent bénéficier de ces thérapies.
+
+
+                    Pourquoi ?
+
+                    Après avoir trouvé ce que l'on veut modifier de soi, de sa vie, il faut en prendre le chemin.
+
+                    Tout ce qui fait que votre vie pourrait être plus belle, plus douce s'il n'y avait pas "ça".
+
+                    Toutes ces décisions prises au nouvel an et qui sont impossible à tenir, ou ces douleurs épuisantes qui rongent le moral, cet état de mal-être, ces souvenirs, ...
+
+                    Il est parfois nécessaire de se faire accompagner, de se faire aider pour apaiser le "ça" douloureux.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="problemes" tabindex="-1" role="dialog" aria-labelledby="quoi-hypnoseLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="{{ asset('images/modal-problemes.jpg') }}" alt="Bannière"/>
+
+                    Tout d'abords, je n'ai pas de baguette magique, je travaille avec vous. Cela veut dire que nous, la thérapeute et le patient, allons faire bouger les choses ensemble. C'est une
+                    relation d'échange et de partage dans la compréhension, le respect et l'attention.
+
+                    L'hypnose et l'E.F.T. permettant de soulager à long terme cet état de souffrance psychologique qui vous empêche d'avancer ou de vivre votre vie pleinement. L'hypnose est aussi une
+                    aide aux traitements, elle est indiqué pour :
+                    <ul>
+                        <li>le trauma et les troubles de stress post-traumatique;</li>
+                        <li>le stress, l'anxiété, l'angoisse;</li>
+                        <li>le burn-out, la dépression, la culpabilité;</li>
+                        <li>le manque de confiance en soi, la motivation;</li>
+                        <li>les difficultés de concentration;</li>
+                        <li>les troubles du sommeil, les douleurs;</li>
+                        <li>les problèmes de poids, les dépendances;</li>
+                        <li>la souffrance liée à un deuil, une séparation;</li>
+                        <li>le passage d'une étape difficile de la vie;</li>
+                        <li>les problèmes féminins et masculins;</li>
+                        <li>l'aide pour l'efficacité de certains traitements.</li>
+                    </ul>
+                    Attention: L'hypnose ne remplace en rien les traitements médicamenteux, c'est une aide, un traitement complémentaire à ceux prescrit par votre médecin.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="therapeute" tabindex="-1" role="dialog" aria-labelledby="quoi-hypnoseLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="{{ asset('images/modal-therapeute.jpg') }}" alt="Bannière"/>
+
+                    Pour s'aider dans ses choix, il faut veiller à :
+                    <ul>
+                        <li>La qualité de la relation est importante afin de vous sentir en confiance et de pouvoir parler des choses difficiles. Pour cela il est possible d'avoir un premier
+                            rendez-vous gratuit. Une première rencontre sans expérience hypnotique, d'une courte durée afin que vous puissiez être rassuré;
+                        </li>
+                        <li>la formation du thérapeute et ses formations continues;</li>
+                        <li>l'expérience dans la relation d'accompagnement;</li>
+                        <li>les domaines et spécialités du thérapeute.</li>
+                    </ul>
+                    Le patient doit se faire confiance pour choisir son thérapeute, celui qui va lui convenir.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

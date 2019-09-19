@@ -3,8 +3,11 @@
     t('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
             var e = t(this.hash);
-            console.log(this.hash.slice(1));
+            var link = t('#link-' + this.hash.substr(1))
+            console.log(link);
             if ((e = e.length ? e : t("[name=" + this.hash.slice(1) + "]")).length) {
+                t('li.active').removeClass('active');
+                link.parent('li').addClass('active');
                 return t("html, body").animate({scrollTop: e.offset().top}, 1000);
             }
         }

@@ -128,4 +128,5 @@ h2 {
     left: 0;
     width: 100%;
     background-color: #FFF;
+    z-index: 10;
 }

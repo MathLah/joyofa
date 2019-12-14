@@ -15,7 +15,6 @@
 .cube div {
     position: absolute;
     width: inherit;
-    color: #f9ecec;
     height: 100%;
 }
 
@@ -57,14 +56,14 @@
     }
     to {
         transform: rotateY(-90deg);
-        margin-left: 147px;
+        margin-left: 22vh;
     }
 }
 
 @keyframes spin-off {
     from {
         transform: rotateY(-90deg);
-        margin-left: 147px;
+        margin-left: 22vh;
     }
     to {
         transform: rotateY(0);

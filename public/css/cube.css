@@ -70,10 +70,38 @@
     }
 }
 
+@keyframes spin-large {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(-90deg);
+        margin-left: 38vh;
+    }
+}
+
+@keyframes spin-off-large {
+    from {
+        transform: rotateY(-90deg);
+        margin-left: 38vh;
+    }
+    to {
+        transform: rotateY(0);
+    }
+}
+
 .cube.spin {
     animation: spin 1s 1 linear forwards;
 }
 
+.cube.spin-large {
+    animation: spin-large 1s 1 linear forwards;
+}
+
 .cube.spin-off {
     animation: spin-off 1s 1 linear forwards;
+}
+
+.cube.spin-off-large {
+    animation: spin-off-large 1s 1 linear forwards;
 }

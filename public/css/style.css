@@ -2212,6 +2212,73 @@ button.uk-icon:not(:disabled)
   }
 }
 /* ========================================================================
+   Component: Alert
+ ========================================================================== */
+.uk-alert {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 15px 29px 15px 15px;
+  color: #666;
+  background: #f8f8f8;
+}
+/* Add margin if adjacent element */
+* + .uk-alert {
+  margin-top: 20px;
+}
+/*
+ * Remove margin from the last-child
+ */
+.uk-alert > :last-child {
+  margin-bottom: 0;
+}
+/* Close
+ * Adopts `uk-close`
+ ========================================================================== */
+.uk-alert-close {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+/*
+ * Remove margin from adjacent element
+ */
+.uk-alert-close:first-child + * {
+  margin-top: 0;
+}
+/*
+ * Hover + Focus
+ */
+/* Style modifiers
+ ========================================================================== */
+/*
+ * Primary
+ */
+.uk-alert-primary {
+  color: #222e6a;
+  background: #b7bbcf;
+}
+/*
+ * Success
+ */
+.uk-alert-success {
+  color: #32d296;
+  background: #edfbf6;
+}
+/*
+ * Warning
+ */
+.uk-alert-warning {
+  color: #faa05a;
+  background: #fff6ee;
+}
+/*
+ * Danger
+ */
+.uk-alert-danger {
+  color: #f0506e;
+  background: #fef4f6;
+}
+/* ========================================================================
    Component: Overlay
  ========================================================================== */
 .uk-overlay {

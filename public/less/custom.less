@@ -1,0 +1,24 @@
+.uk-navbar-nav > li.uk-active > a {
+  border-bottom: 5px inset #2593D2;
+  transition: border-bottom-width 0.3s ease;
+}
+
+.uk-card {
+  box-shadow: 1px 1px 6px fade(@global-secondary-background, 80%);
+}
+
+.uk-button {
+  font-family: @base-heading-font-family;
+  border-radius: @global-border-radius;
+}
+
+.uk-tab {
+  > * {
+    font-family: @base-heading-font-family;
+    border-bottom: 4px inset @tab-item-border-color;
+  }
+
+  > .uk-active {
+    border-bottom-color: @tab-item-active-border-color;
+  }
+}

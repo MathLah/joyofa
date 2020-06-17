@@ -1780,12 +1780,12 @@ button.uk-icon:not(:disabled)
     /* Horizontal */
   .uk-grid-large,
     .uk-grid-column-large {
-    margin-left: -70px;
+    margin-left: -100px;
   }
 
   .uk-grid-large > *,
     .uk-grid-column-large > * {
-    padding-left: 70px;
+    padding-left: 100px;
   }
     /* Vertical */
   .uk-grid + .uk-grid-large,
@@ -1793,7 +1793,7 @@ button.uk-icon:not(:disabled)
     .uk-grid-large > .uk-grid-margin,
     .uk-grid-row-large > .uk-grid-margin,
     * + .uk-grid-margin-large {
-    margin-top: 70px;
+    margin-top: 100px;
   }
 }
 /*
@@ -1998,35 +1998,35 @@ button.uk-icon:not(:disabled)
     /* Horizontal */
   .uk-grid-divider.uk-grid-large,
     .uk-grid-divider.uk-grid-column-large {
-    margin-left: -140px;
+    margin-left: -200px;
   }
 
   .uk-grid-divider.uk-grid-large > *,
     .uk-grid-divider.uk-grid-column-large > * {
-    padding-left: 140px;
+    padding-left: 200px;
   }
 
   .uk-grid-divider.uk-grid-large > :not(.uk-first-column)::before,
     .uk-grid-divider.uk-grid-column-large > :not(.uk-first-column)::before {
-    left: 70px;
+    left: 100px;
   }
     /* Vertical */
   .uk-grid-divider.uk-grid-large.uk-grid-stack > .uk-grid-margin,
     .uk-grid-divider.uk-grid-row-large.uk-grid-stack > .uk-grid-margin {
-    margin-top: 140px;
+    margin-top: 200px;
   }
 
   .uk-grid-divider.uk-grid-large.uk-grid-stack > .uk-grid-margin::before {
-    top: -70px;
-    left: 140px;
+    top: -100px;
+    left: 200px;
   }
 
   .uk-grid-divider.uk-grid-row-large.uk-grid-stack > .uk-grid-margin::before {
-    top: -70px;
+    top: -100px;
   }
 
   .uk-grid-divider.uk-grid-column-large.uk-grid-stack > .uk-grid-margin::before {
-    left: 140px;
+    left: 200px;
   }
 }
 /* Match child of a grid cell
@@ -2136,7 +2136,7 @@ button.uk-icon:not(:disabled)
  */
 .uk-card-default {
   color: #666;
-  background: #f8f8f8;
+  background: #fff;
 }
 
 .uk-card-default .uk-card-title {
@@ -2144,7 +2144,7 @@ button.uk-icon:not(:disabled)
 }
 
 .uk-card-default.uk-card-hover:hover {
-  background-color: #ebebeb;
+  background-color: #f2f2f2;
 }
 /*
  * Primary
@@ -2200,15 +2200,15 @@ button.uk-icon:not(:disabled)
 @media (min-width: 1200px) {
   .uk-card-large.uk-card-body,
     .uk-card-large .uk-card-body {
-    padding: 70px 70px;
+    padding: 100px 100px;
   }
 
   .uk-card-large .uk-card-header {
-    padding: 35px 70px;
+    padding: 50px 100px;
   }
 
   .uk-card-large .uk-card-footer {
-    padding: 35px 70px;
+    padding: 50px 100px;
   }
 }
 /* ========================================================================
@@ -2237,7 +2237,7 @@ button.uk-icon:not(:disabled)
  * Primary
  */
 .uk-overlay-primary {
-  background: rgba(37, 147, 210, .8);
+  background: rgba(34, 46, 106, .6);
 }
 /* ========================================================================
    Component: Nav
@@ -2567,7 +2567,7 @@ ul.uk-nav-sub {
  * Nav items
  */
 .uk-navbar-nav > li > a {
-  color: #fff;
+  color: #c5deec;
 }
 /*
  * Hover
@@ -2576,7 +2576,7 @@ ul.uk-nav-sub {
 .uk-navbar-nav > li:hover > a,
 .uk-navbar-nav > li > a:focus,
 .uk-navbar-nav > li > a.uk-open {
-  color: #666;
+  color: #efefef;
   outline: none;
 }
 /* OnClick */
@@ -2585,7 +2585,7 @@ ul.uk-nav-sub {
 }
 /* Active */
 .uk-navbar-nav > li.uk-active > a {
-  color: #333;
+  color: #fff;
 }
 /* Item
  ========================================================================== */
@@ -2595,14 +2595,14 @@ ul.uk-nav-sub {
 /* Toggle
  ========================================================================== */
 .uk-navbar-toggle {
-  color: #999;
+  color: #fff;
 }
 
 .uk-navbar-toggle:hover,
 .uk-navbar-toggle:focus,
 .uk-navbar-toggle.uk-open {
   text-decoration: none;
-  color: #666;
+  color: #c5deec;
   outline: none;
 }
 /*
@@ -2809,9 +2809,9 @@ ul.uk-nav-sub {
     /* 1 */
   display: block;
     /* 2 */
-  padding: 5px 10px;
+  padding: 15px 50px;
   text-align: center;
-  color: #999;
+  color: #222e6a;
 }
 /* Hover + Focus */
 .uk-tab > * > a:hover,
@@ -2924,7 +2924,7 @@ ul.uk-nav-sub {
   box-sizing: border-box;
   width: 270px;
   padding: 20px 20px;
-  background: #2593d2;
+  background: #222e6a;
   -webkit-overflow-scrolling: touch;
 }
 /* Tablet landscape and bigger */
@@ -6270,7 +6270,7 @@ iframe.uk-cover {
 /* Desktop and bigger */
 @media (min-width: 1200px) {
   .uk-padding-large {
-    padding: 70px;
+    padding: 100px;
   }
 }
 /* Remove
@@ -6856,7 +6856,7 @@ iframe.uk-cover {
 .uk-card-secondary > :not([class*='uk-card-media']),
 .uk-overlay-primary,
 .uk-offcanvas-bar {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
 }
 
 .uk-light a,
@@ -6928,7 +6928,7 @@ iframe.uk-cover {
 .uk-offcanvas-bar :not(pre) > code,
 .uk-offcanvas-bar :not(pre) > kbd,
 .uk-offcanvas-bar :not(pre) > samp {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
 }
 
 .uk-light em,
@@ -7159,7 +7159,7 @@ iframe.uk-cover {
 .uk-overlay-primary .uk-link-muted a:hover,
 .uk-offcanvas-bar .uk-link-muted:hover,
 .uk-offcanvas-bar .uk-link-muted a:hover {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
 }
 
 .uk-light .uk-link-text:hover,
@@ -7420,7 +7420,7 @@ iframe.uk-cover {
 .uk-overlay-primary .uk-icon-link:focus,
 .uk-offcanvas-bar .uk-icon-link:hover,
 .uk-offcanvas-bar .uk-icon-link:focus {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
 }
 
 .uk-light .uk-icon-link:active,
@@ -7441,7 +7441,7 @@ iframe.uk-cover {
 .uk-overlay-primary .uk-active > .uk-icon-link,
 .uk-offcanvas-bar .uk-icon-link:active,
 .uk-offcanvas-bar .uk-active > .uk-icon-link {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
 }
 
 .uk-light .uk-icon-button,
@@ -7475,7 +7475,7 @@ iframe.uk-cover {
 .uk-overlay-primary .uk-icon-button:focus,
 .uk-offcanvas-bar .uk-icon-button:hover,
 .uk-offcanvas-bar .uk-icon-button:focus {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
   background-color: rgba(242, 242, 242, .1);
 }
 
@@ -7488,7 +7488,7 @@ iframe.uk-cover {
 .uk-card-secondary > :not([class*='uk-card-media']) .uk-icon-button:active,
 .uk-overlay-primary .uk-icon-button:active,
 .uk-offcanvas-bar .uk-icon-button:active {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
   background-color: rgba(230, 230, 230, .1);
 }
 
@@ -7693,7 +7693,7 @@ iframe.uk-cover {
 .uk-overlay-primary .uk-button-text:focus,
 .uk-offcanvas-bar .uk-button-text:hover,
 .uk-offcanvas-bar .uk-button-text:focus {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
 }
 
 .uk-light .uk-button-text:disabled,
@@ -7738,7 +7738,7 @@ iframe.uk-cover {
 .uk-overlay-primary .uk-button-link:focus,
 .uk-offcanvas-bar .uk-button-link:hover,
 .uk-offcanvas-bar .uk-button-link:focus {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
 }
 
 .uk-light .uk-grid-divider > :not(.uk-first-column)::before,
@@ -7819,7 +7819,7 @@ iframe.uk-cover {
 .uk-overlay-primary .uk-nav-default > li > a:focus,
 .uk-offcanvas-bar .uk-nav-default > li > a:hover,
 .uk-offcanvas-bar .uk-nav-default > li > a:focus {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
 }
 
 .uk-light .uk-nav-default > li.uk-active > a,
@@ -7888,7 +7888,7 @@ iframe.uk-cover {
 .uk-overlay-primary .uk-nav-default .uk-nav-sub a:focus,
 .uk-offcanvas-bar .uk-nav-default .uk-nav-sub a:hover,
 .uk-offcanvas-bar .uk-nav-default .uk-nav-sub a:focus {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
 }
 
 .uk-light .uk-nav-default .uk-nav-sub li.uk-active > a,
@@ -7933,7 +7933,7 @@ iframe.uk-cover {
 .uk-overlay-primary .uk-nav-primary > li > a:focus,
 .uk-offcanvas-bar .uk-nav-primary > li > a:hover,
 .uk-offcanvas-bar .uk-nav-primary > li > a:focus {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
 }
 
 .uk-light .uk-nav-primary > li.uk-active > a,
@@ -8002,7 +8002,7 @@ iframe.uk-cover {
 .uk-overlay-primary .uk-nav-primary .uk-nav-sub a:focus,
 .uk-offcanvas-bar .uk-nav-primary .uk-nav-sub a:hover,
 .uk-offcanvas-bar .uk-nav-primary .uk-nav-sub a:focus {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
 }
 
 .uk-light .uk-nav-primary .uk-nav-sub li.uk-active > a,
@@ -8056,7 +8056,7 @@ iframe.uk-cover {
 .uk-offcanvas-bar .uk-navbar-nav > li:hover > a,
 .uk-offcanvas-bar .uk-navbar-nav > li > a:focus,
 .uk-offcanvas-bar .uk-navbar-nav > li > a.uk-open {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
 }
 
 .uk-light .uk-navbar-nav > li > a:active,
@@ -8092,7 +8092,7 @@ iframe.uk-cover {
 .uk-card-secondary > :not([class*='uk-card-media']) .uk-navbar-item,
 .uk-overlay-primary .uk-navbar-item,
 .uk-offcanvas-bar .uk-navbar-item {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
 }
 
 .uk-light .uk-navbar-toggle,
@@ -8134,7 +8134,7 @@ iframe.uk-cover {
 .uk-offcanvas-bar .uk-navbar-toggle:hover,
 .uk-offcanvas-bar .uk-navbar-toggle:focus,
 .uk-offcanvas-bar .uk-navbar-toggle.uk-open {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
 }
 
 .uk-light .uk-tab > * > a,
@@ -8167,7 +8167,7 @@ iframe.uk-cover {
 .uk-overlay-primary .uk-tab > * > a:focus,
 .uk-offcanvas-bar .uk-tab > * > a:hover,
 .uk-offcanvas-bar .uk-tab > * > a:focus {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
 }
 
 .uk-light .uk-tab > .uk-active > a,
@@ -8203,7 +8203,7 @@ iframe.uk-cover {
 .uk-card-secondary > :not([class*='uk-card-media']) .uk-text-lead,
 .uk-overlay-primary .uk-text-lead,
 .uk-offcanvas-bar .uk-text-lead {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
 }
 
 .uk-light .uk-text-meta,
@@ -8275,7 +8275,7 @@ iframe.uk-cover {
 .uk-card-secondary > :not([class*='uk-card-media']) .uk-logo,
 .uk-overlay-primary .uk-logo,
 .uk-offcanvas-bar .uk-logo {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
 }
 
 .uk-light .uk-logo:hover,
@@ -8296,7 +8296,7 @@ iframe.uk-cover {
 .uk-overlay-primary .uk-logo:focus,
 .uk-offcanvas-bar .uk-logo:hover,
 .uk-offcanvas-bar .uk-logo:focus {
-  color: rgba(255, 255, 255, .7);
+  color: #fff;
 }
 
 .uk-light .uk-logo > :not(.uk-logo-inverse):not(:only-of-type),
@@ -8321,4 +8321,27 @@ iframe.uk-cover {
 .uk-overlay-primary .uk-logo-inverse,
 .uk-offcanvas-bar .uk-logo-inverse {
   display: inline;
+}
+
+.uk-navbar-nav > li.uk-active > a {
+  transition: border-bottom-width .3s ease;
+  border-bottom: 5px inset #2593d2;
+}
+
+.uk-card {
+  box-shadow: 1px 1px 6px rgba(37, 147, 210, .8);
+}
+
+.uk-button {
+  font-family: 'Lobster', sans-serif;
+  border-radius: 4px;
+}
+
+.uk-tab > * {
+  font-family: 'Lobster', sans-serif;
+  border-bottom: 4px inset #d3e9f6;
+}
+
+.uk-tab > .uk-active {
+  border-bottom-color: #222e6a;
 }

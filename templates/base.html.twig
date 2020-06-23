@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr-FR">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="description" content="Infirmière en santé mentale, hypnothérapeute formée et excercant en Suisse. Je continue mon parcours initiatique régulièrement à Paris, Nantes, Annecy etc. J'utilise vos ressources et votre éveil pour réparer vos douleurs." />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>{% block title %}Murmure d'hypno{% endblock %}</title>
@@ -11,8 +15,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#222E6A" />
 
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans&display=swap" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet" defer/>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans&display=swap" rel="stylesheet" async defer>
 
     {% block stylesheets %}{% endblock %}
 </head>
@@ -20,8 +24,8 @@
 {% include 'header.html.twig' %}
 {% block body %}{% endblock %}
 {% include 'footer.html.twig' %}
-<script src="{{ asset('js/uikit.min.js') }}"></script>
-<script src="{{ asset('js/uikit-icons.min.js') }}"></script>
+<script src="{{ asset('js/uikit.min.js') }}" async defer></script>
+<script src="{{ asset('js/uikit-icons.min.js') }}" async defer></script>
 
 {% block javascripts %}{% endblock %}
 </body>

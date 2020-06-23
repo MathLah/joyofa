@@ -1,28 +1,45 @@
 <div class="uk-navbar-container" uk-sticky="cls-active: uk-navbar-sticky">
     <div class="uk-container">
-        <nav class="uk-navbar uk-navbar-container uk-margin" uk-navbar>
+        <nav class="uk-navbar uk-navbar-container uk-visible@l" uk-navbar>
+            <div class="uk-navbar-center" uk-scrollspy-nav="closest: li; scroll: true">
+                <div class="uk-navbar-center-left">
+                    <div>
+                        <ul class="uk-navbar-nav uk-visible@l">
+                            <li>
+                                <a href="#hypnotherapeute">Qui suis-je</a>
+                            </li>
+                            <li>
+                                <a href="#hypnotherapie">L'hypnothérapie</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="uk-navbar-item uk-logo uk-margin-small-top uk-margin-small-bottom uk-light" href="#">
+                    <img src="{{ asset('images/logo.svg') }}" alt="Murmure d'hypno, votre hypnothérapeute" />
+                </a>
+                <div class="uk-navbar-center-right">
+                    <div>
+                        <ul class="uk-navbar-nav uk-visible@l">
+                            <li>
+                                <a href="#seance" >La séance</a>
+                            </li>
+                            <li>
+                                <a href="#tarifs">Tarifs</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="uk-navbar uk-navbar-container uk-margin uk-hidden@l" uk-navbar>
             <div class="uk-navbar-left">
                 <a class="uk-navbar-item uk-logo uk-margin-small-top uk-margin-small-bottom uk-light" href="#">
                     <img src="{{ asset('images/logo.svg') }}" alt="Murmure d'hypno, votre hypnothérapeute" />
                 </a>
             </div>
-            <ul class="uk-navbar-nav uk-visible@l" uk-scrollspy-nav="closest: li; scroll: true">
-                <li>
-                    <a href="#hypnotherapeute">Qui suis-je</a>
-                </li>
-                <li>
-                    <a href="#hypnotherapie">L'hypnothérapie</a>
-                </li>
-                <li>
-                    <a href="#seance" >La séance</a>
-                </li>
-                <li>
-                    <a href="#tarifs">Tarifs</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
             <div class="uk-navbar-right">
                 <a class="uk-navbar-toggle uk-light uk-hidden@l" href="#mobile-nav" uk-toggle="">
                     <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>

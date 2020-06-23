@@ -2623,7 +2623,7 @@ ul.uk-nav-sub {
   display: flex;
     /* 2 */
   box-sizing: border-box;
-  min-height: 80px;
+  min-height: 100px;
   padding: 0 15px;
     /* 4 */
   text-decoration: none;

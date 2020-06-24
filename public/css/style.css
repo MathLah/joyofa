@@ -2623,7 +2623,7 @@ ul.uk-nav-sub {
   display: flex;
     /* 2 */
   box-sizing: border-box;
-  min-height: 100px;
+  min-height: 120px;
   padding: 0 15px;
     /* 4 */
   text-decoration: none;
@@ -8395,7 +8395,7 @@ iframe.uk-cover {
   border-bottom: 5px inset #2593d2;
 }
 
-.uk-card {
+.uk-card:not(.uk-preserve) {
   box-shadow: 1px 1px 6px rgba(37, 147, 210, .8);
 }
 
